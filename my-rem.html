@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no, viewport-fit=cover">
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        outline: 0;
+        -webkit-tap-highlight-color: transparent;
+        tap-highlight-color: transparent;
+        border-style: none;
+        box-sizing: border-box;
+    }
+
+    html {
+        height: 100%;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+    }
+
+    @media only screen and (min-width:750px),
+    only screen and (min-device-width:750px) {
+        html {
+            font-size: 100px
+        }
+    }
+
+    @media only screen and (max-width:750px),
+    only screen and (max-device-width:750px) {
+        html {
+            font-size: 100px
+        }
+    }
+
+    @media only screen and (max-width:640px),
+    only screen and (max-device-width:640px) {
+        html {
+            font-size: 85.33px
+        }
+    }
+
+    @media only screen and (max-width:600px),
+    only screen and (max-device-width:600px) {
+        html {
+            font-size: 80px
+        }
+    }
+
+    @media only screen and (max-width:540px),
+    only screen and (max-device-width:540px) {
+        html {
+            font-size: 72px
+        }
+    }
+
+    @media only screen and (max-width:480px),
+    only screen and (max-device-width:480px) {
+        html {
+            font-size: 64px
+        }
+    }
+
+    @media only screen and (max-width:414px),
+    only screen and (max-device-width:414px) {
+        html {
+            font-size: 55.2px
+        }
+    }
+
+    @media only screen and (max-width:400px),
+    only screen and (max-device-width:400px) {
+        html {
+            font-size: 53.33px
+        }
+    }
+
+    @media only screen and (max-width:375px),
+    only screen and (max-device-width:375px) {
+        html {
+            font-size: 50px
+        }
+    }
+
+    @media only screen and (max-width:360px),
+    only screen and (max-device-width:360px) {
+        html {
+            font-size: 48px
+        }
+    }
+
+    @media only screen and (max-width:320px),
+    only screen and (max-device-width:320px) {
+        html {
+            font-size: 42.66px
+        }
+    }
+
+    @media only screen and (max-width:240px),
+    only screen and (max-device-width:240px) {
+        html {
+            font-size: 32px
+        }
+    }
+
+    @media only screen and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+        * {
+            cursor: pointer;
+        }
+    }
+
+    @media only screen and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+        html {
+            font-size: 36px
+        }
+    }
+
+    body {
+        height: 100%;
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-size-adjust: none;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        background: @bg-body;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        font: .32rem/1.5 "\5FAE\8F6F\96C5\9ED1", "\5b8b\4f53", "PingFangSC-Regular";
+    }
+
+    .test-text p {
+        font-size: 0.18rem;
+    }
+
+    .border-bg-img {
+    	margin: 20px;
+        background-image: linear-gradient(0deg, #000 0, #000 1px,transparent 1px), linear-gradient(90deg, #000 0, #000 1px,transparent 1px), linear-gradient(180deg, #000 0, #000 1px,transparent 1px), linear-gradient(270deg, #000 0, #000 1px,transparent 1px);
+    }
+    @media screen and (-webkit-min-device-pixel-ratio: 2){
+	    .border-bg-img {
+        background-image: linear-gradient(0deg, #000 0, #000 0.5px,transparent 0.5px), linear-gradient(90deg, #000 0, #000 0.5px,transparent 0.5px), linear-gradient(180deg, #000 0, #000 0.5px,transparent 0.5px), linear-gradient(270deg, red 0, red 0.5px,transparent 0.5px);
+    }
+	}
+    </style>
+</head>
+<body>
+    
+    <h1>rem</h1>
+    <div class="test-text">
+        <p>宋宋宋宋宋宋宋宋宋宋宋宋宋宋宋宋宋宋宋宋宋宋宋宋宋宋宋宋宋宋宋宋宋宋宋宋宋宋宋宋宋宋宋</p><br>
+        <p>rem相对的只是HTML根元素，字体大小。</p><br>
+        <div class="border-bg-img">
+            边框边框<br>边框边框<br>
+        </div><br>
+        <h2>1px边框极细控制</h2>
+        <p>1、需要切图、用border-image，控制border-image-slice来细化边框（需要注意上：不同边框颜色不一样不好玩、圆角不好控制；上、右这种方向下一样的要用两个div控制）</p>
+        <p>2、用伪类。（注意：有层级的不好控制，比如地下是一个连接a，这个边框其实是一个浮层在上面；input需要设置边框；代码量也很大, 占据了伪元素, 容易引起冲突）</p>
+        <p>3、background渐变: 圆角不好控制</p>
+    </div>
+
+
+</body>
+</html>

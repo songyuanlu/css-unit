@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no, viewport-fit=cover">
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        outline: 0;
+        -webkit-tap-highlight-color: transparent;
+        tap-highlight-color: transparent;
+        border-style: none;
+        box-sizing: border-box;
+    }
+
+    html {
+        height: 100%;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+    }
+    @media only screen and (min-width:750px),
+    only screen and (min-device-width:750px) {
+        html {
+            font-size: 50px
+        }
+    }
+
+    @media only screen and (max-width:750px),
+    only screen and (max-device-width:750px) {
+        html {
+            font-size: 37.5px
+        }
+    }
+
+    @media only screen and (max-width:640px),
+    only screen and (max-device-width:640px) {
+        html {
+            font-size: 32px
+        }
+    }
+
+    @media only screen and (max-width:600px),
+    only screen and (max-device-width:600px) {
+        html {
+            font-size: 30px;
+        }
+    }
+
+    @media only screen and (max-width:540px),
+    only screen and (max-device-width:540px) {
+        html {
+            font-size: 27px
+        }
+    }
+
+    @media only screen and (max-width:480px),
+    only screen and (max-device-width:480px) {
+        html {
+            font-size: 24px
+        }
+    }
+
+    @media only screen and (max-width:414px),
+    only screen and (max-device-width:414px) {
+        html {
+            font-size: 20.7px
+        }
+    }
+
+    @media only screen and (max-width:400px),
+    only screen and (max-device-width:400px) {
+        html {
+            font-size: 20px
+        }
+    }
+
+    @media only screen and (max-width:375px),
+    only screen and (max-device-width:375px) {
+        html {
+            font-size: 18.75px
+        }
+    }
+
+    @media only screen and (max-width:360px),
+    only screen and (max-device-width:360px) {
+        html {
+            font-size: 18px
+        }
+    }
+
+    @media only screen and (max-width:320px),
+    only screen and (max-device-width:320px) {
+        html {
+            font-size: 16px
+        }
+    }
+
+    @media only screen and (max-width:240px),
+    only screen and (max-device-width:240px) {
+        html {
+            font-size: 12px
+        }
+    }
+
+  
+
+    body{
+        font-size: 62.5%;
+    }
+    p.p-em{
+        font-size: 1.6em;
+    }
+    .test-text{
+        font-size: 1.6em;
+    }
+   
+    </style>
+</head>
+<body>
+    <h1>em</h1>
+    <p class="p-em">这里是 .p-em 字体 1.6em大小</p>
+    <div class="test-text">
+        <div>这里是 .test-text 字体 1.6em大小</div>
+        <p class="p-em">这里是 .p-em 字体 1.6em大小</p>
+        <br><br>
+        <p>相对长度单位。相当于当前对象内文本的字体尺寸，如果当前对行内文本的字体尺寸未被认为设置，则相对于浏览器的默认字体尺寸。em的值并不是固定的，它会继承父级元素的字体大小。所有未经调整的浏览器都符合: 1em=16px。那么12px=0.75em,10px=0.625em。为了简化font-size的换算，需要在css中的body选择器中声明Font-size=62.5%，这就使em值变为 16px*62.5%=10px, 这样12px=1.2em, 10px=1em, 也就是说只需要将你的原来的px数值除以10，然后换上em作为单位就行了。</p><br><br>
+        <p>因为em 当前尺寸受父尺寸影响，比如常见的组件中有组件，都有字体大小，我觉得影响会很大，字体设置困难。</p>
+    </div>
+
+</body>
+
+</html>
